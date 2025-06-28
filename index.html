@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DIY Phone Hologram Projector</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="importmap">
+      {
+        "imports": {
+          "confetti": "https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.module.mjs"
+        }
+      }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>DIY Phone "Hologram" Projector</h1>
+            <p class="subtitle">Turn your smartphone into a 3D illusion machine!</p>
+        </header>
+
+        <section id="intro">
+            <h2>What are we making?</h2>
+            <p>We're going to create a simple device that produces a "hologram" effect. While it's not a true laser hologram, it's a brilliant optical illusion called a <strong>Pepper's Ghost</strong>. It uses a specially formatted video on your phone and a transparent pyramid to create a floating 3D-like image.</p>
+        </section>
+
+        <section id="materials">
+            <h2>What You'll Need</h2>
+            <div class="materials-grid">
+                <div class="material-item">
+                    <img src="smartphone.png" alt="Smartphone">
+                    <h3>Smartphone</h3>
+                </div>
+                <div class="material-item">
+                    <img src="cd-case.png" alt="CD case">
+                    <h3>Clear Plastic</h3>
+                    <p>(An old CD case is perfect! Thin, rigid plastic sheets also work.)</p>
+                </div>
+                 <div class="material-item">
+                    <img src="hand-microscope.png" alt="Hand microscope">
+                    <h3>Hand Microscope</h3>
+                    <p>(You asked about this! While not essential for the build, you can use it to inspect the plastic for scratches that might blur your hologram.)</p>
+                </div>
+                <div class="material-item">
+                    <img src="tools.png" alt="Tools">
+                    <h3>Basic Tools</h3>
+                    <p>(Scissors or a craft knife, a ruler, a pen, and some clear tape.)</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="guide">
+            <h2>Step-by-Step Guide</h2>
+            <div class="steps">
+                <div class="step">
+                    <h3>1. Create Your Template</h3>
+                    <p>On a piece of paper, draw a trapezoid shape with the dimensions shown below. This will be one of the four sides of our pyramid.</p>
+                    <img src="pyramid-template.png" alt="Pyramid template dimensions: 1cm top, 6cm base, 3.5cm height" class="diagram">
+                </div>
+                <div class="step">
+                    <h3>2. Trace and Cut</h3>
+                    <p>Carefully trace your paper template onto the clear plastic four times. A fine-tipped permanent marker works well. Then, using a craft knife or sturdy scissors, cut out the four plastic shapes. Adult supervision is recommended for this part!</p>
+                </div>
+                <div class="step">
+                    <h3>3. Assemble the Pyramid</h3>
+                    <p>Take your four plastic trapezoids and tape them together along the slanted edges to form a pyramid. A small piece of clear tape on the outside seams works best. Your pyramid should look like this when placed on your phone.</p>
+                     <img src="pyramid-on-phone.png" alt="The finished pyramid on a phone screen" class="diagram">
+                </div>
+            </div>
+             <button id="complete-button">I built my pyramid!</button>
+        </section>
+
+        <section id="showtime">
+            <h2>Showtime!</h2>
+            <p>You're ready! Place your pyramid upside-down on the center of the display below. For the best effect, turn down the lights in your room. Press the play button and watch the magic happen!</p>
+            <div id="hologram-container">
+                <div class="hologram-box">
+                    <div class="hologram-item top"><img src="butterfly.png" alt="hologram butterfly"></div>
+                    <div class="hologram-item right"><img src="butterfly.png" alt="hologram butterfly"></div>
+                    <div class="hologram-item bottom"><img src="butterfly.png" alt="hologram butterfly"></div>
+                    <div class="hologram-item left"><img src="butterfly.png" alt="hologram butterfly"></div>
+                    <div id="play-overlay">
+                        <div id="play-button"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="how-it-works">
+            <h2>How It Works</h2>
+            <p>The "hologram" is based on a 19th-century illusion technique called Pepper's Ghost. The video on your screen displays the same object from four different angles. Each image reflects off one of the four faces of your pyramid. When you look at the pyramid from the side, your brain combines these four reflections into a single, complete image that appears to be floating in 3D space inside the pyramid. It's a simple but incredibly effective illusion!</p>
+        </section>
+
+    </div>
+    <script src="script.js"></script>
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js/v8c78df7c7c0f484497ecbca7046644da1771523124516" integrity="sha512-8DS7rgIrAmghBFwoOTujcf6D9rXvH8xm8JQ1Ja01h9QX8EzXldiszufYa4IFfKdLUKTTrnSFXLDkUEOTrZQ8Qg==" data-cf-beacon='{"version":"2024.11.0","token":"4c6229722a6346bc8eb5cb0e5eae5d41","server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' crossorigin="anonymous"></script>
+</body>
+</html>
+
